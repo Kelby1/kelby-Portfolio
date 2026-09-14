@@ -27,6 +27,33 @@ const services = [
   },
 ];
 
+const projects = [
+  {
+    title: "SCP Site-19 Command System",
+    type: "React · Supabase · Operations UI",
+    description:
+      "An enterprise-style SCP Foundation command system with authentication, role-based access, secured CRUD workflows, personnel management, and a terminal-inspired interface.",
+    href: "https://github.com/Kelby1/scp-site19-command-system",
+    status: "ACTIVE BUILD",
+  },
+  {
+    title: "Tetris in Python",
+    type: "Python · Game Logic",
+    description:
+      "A Python Tetris project built to strengthen reasoning, object-oriented programming, board logic, collision handling, scoring, and game-state management.",
+    href: "https://github.com/Kelby1/Tetris-Python",
+    status: "LEARNING PROJECT",
+  },
+  {
+    title: "WebFinal",
+    type: "HTML · CSS · Front-end",
+    description:
+      "An earlier web development project that shows the foundation of my front-end work and how my approach to interface building has evolved over time.",
+    href: "https://github.com/Kelby1/WebFinal",
+    status: "ARCHIVE",
+  },
+];
+
 const experience = [
   {
     period: "Sep 2026 — Present",
@@ -238,6 +265,7 @@ function App() {
 
           <div className="nav-links">
             <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
             <a href="#experience">Experience</a>
             <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
@@ -314,6 +342,59 @@ function App() {
                 <p>{service.description}</p>
               </article>
             ))}
+          </div>
+        </section>
+
+
+        <section className="section project-section" id="projects">
+          <div className="container">
+            <div className="project-heading-row">
+              <div className="section-heading">
+                <p className="eyebrow">Selected projects</p>
+                <h2>Things I’ve built while learning, supporting, and experimenting.</h2>
+                <p className="section-copy">
+                  These projects live in separate GitHub repositories so the code,
+                  history, and future updates stay clean and easy to inspect.
+                </p>
+              </div>
+
+              <a
+                className="github-profile-link"
+                href="https://github.com/Kelby1"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View all GitHub repositories ↗
+              </a>
+            </div>
+
+            <div className="project-grid">
+              {projects.map((project, index) => (
+                <a
+                  className="project-card"
+                  href={project.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  key={project.title}
+                >
+                  <div className="project-card-top">
+                    <span className="project-index">0{index + 1}</span>
+                    <span className="project-status">{project.status}</span>
+                  </div>
+
+                  <div className="project-card-body">
+                    <p className="project-type">{project.type}</p>
+                    <h3>{project.title}</h3>
+                    <p>{project.description}</p>
+                  </div>
+
+                  <div className="project-card-footer">
+                    <span>github.com/Kelby1</span>
+                    <span className="project-arrow">↗</span>
+                  </div>
+                </a>
+              ))}
+            </div>
           </div>
         </section>
 
