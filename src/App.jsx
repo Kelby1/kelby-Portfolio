@@ -417,7 +417,7 @@ function App() {
               </a>
               <a
                 className="button secondary"
-                href="https://www.linkedin.com/in/kelby-dati-dati-8079ba349"
+                href="https://www.linkedin.com/in/kelby-dati-139b33239"
                 target="_blank"
                 rel="noreferrer"
               >
