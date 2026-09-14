@@ -1206,6 +1206,37 @@ h3 {
   font-size: 0.65rem;
 }
 
+
+.project-live-link,
+.project-source-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 180ms ease, transform 180ms ease;
+}
+
+.project-live-link {
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.project-source-link {
+  color: var(--muted);
+}
+
+.project-live-link:hover,
+.project-source-link:hover {
+  transform: translateY(-1px);
+}
+
+.project-source-link:hover {
+  color: var(--text);
+}
+
+.project-deploy-pending {
+  color: var(--muted);
+}
+
 .project-arrow {
   color: var(--accent);
   font-size: 1rem;
