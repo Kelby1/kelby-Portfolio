@@ -386,7 +386,19 @@ function App() {
 
             <div className="project-grid">
               {projects.map((project, index) => (
-                <article className="project-card" key={project.title}>
+                <article
+                  className={project.website && project.liveUrl ? "project-card project-card-live" : "project-card"}
+                  key={project.title}
+                >
+                  {project.website && project.liveUrl ? (
+                    <a
+                      className="project-card-overlay-link"
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={`Open ${project.title} website`}
+                    />
+                  ) : null}
                   <div className="project-card-top">
                     <span className="project-index">0{index + 1}</span>
                     <span className="project-status">{project.status}</span>
@@ -419,6 +431,7 @@ function App() {
                       href={project.repoUrl}
                       target="_blank"
                       rel="noreferrer"
+                      onClick={(event) => event.stopPropagation()}
                     >
                       Source code ↗
                     </a>
