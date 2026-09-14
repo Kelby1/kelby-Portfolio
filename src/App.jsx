@@ -27,6 +27,33 @@ const services = [
   },
 ];
 
+const projects = [
+  {
+    title: "SCP Site-19 Command System",
+    type: "React · Supabase · Operations UI",
+    description:
+      "An enterprise-style SCP Foundation command system with authentication, role-based access, secured CRUD workflows, personnel management, and a terminal-inspired interface.",
+    href: "https://github.com/Kelby1/scp-site19-command-system",
+    status: "ACTIVE BUILD",
+  },
+  {
+    title: "Tetris in Python",
+    type: "Python · Game Logic",
+    description:
+      "A Python Tetris project built to strengthen reasoning, object-oriented programming, board logic, collision handling, scoring, and game-state management.",
+    href: "https://github.com/Kelby1/Tetris-Python",
+    status: "LEARNING PROJECT",
+  },
+  {
+    title: "WebFinal",
+    type: "HTML · CSS · Front-end",
+    description:
+      "An earlier web development project that shows the foundation of my front-end work and how my approach to interface building has evolved over time.",
+    href: "https://github.com/Kelby1/WebFinal",
+    status: "ARCHIVE",
+  },
+];
+
 const experience = [
   {
     period: "Sep 2026 — Present",
