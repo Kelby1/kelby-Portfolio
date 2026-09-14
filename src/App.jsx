@@ -29,28 +29,44 @@ const services = [
 
 const projects = [
   {
+    title: "Land Survey Company Website",
+    type: "Client Website · React · Vite",
+    description:
+      "A professional land surveying website concept with an interactive control-point map, service presentation, field-process sections, and a quote-request flow prepared for Netlify Forms.",
+    liveUrl: null,
+    repoUrl: "https://github.com/Kelby1/land-survey-client-website",
+    status: "CLIENT PROJECT",
+    website: true,
+  },
+  {
     title: "SCP Site-19 Command System",
-    type: "React · Supabase · Operations UI",
+    type: "Web App · React · Supabase",
     description:
       "An enterprise-style SCP Foundation command system with authentication, role-based access, secured CRUD workflows, personnel management, and a terminal-inspired interface.",
-    href: "https://github.com/Kelby1/scp-site19-command-system",
+    liveUrl: null,
+    repoUrl: "https://github.com/Kelby1/scp-site19-command-system",
     status: "ACTIVE BUILD",
+    website: true,
   },
   {
     title: "Tetris in Python",
-    type: "Python · Game Logic",
+    type: "Desktop App · Python",
     description:
       "A Python Tetris project built to strengthen reasoning, object-oriented programming, board logic, collision handling, scoring, and game-state management.",
-    href: "https://github.com/Kelby1/Tetris-Python",
+    liveUrl: null,
+    repoUrl: "https://github.com/Kelby1/Tetris-Python",
     status: "LEARNING PROJECT",
+    website: false,
   },
   {
     title: "WebFinal",
-    type: "HTML · CSS · Front-end",
+    type: "Website · HTML · CSS",
     description:
       "An earlier web development project that shows the foundation of my front-end work and how my approach to interface building has evolved over time.",
-    href: "https://github.com/Kelby1/WebFinal",
-    status: "ARCHIVE",
+    liveUrl: "https://kelby1.github.io/WebFinal/",
+    repoUrl: "https://github.com/Kelby1/WebFinal",
+    status: "LIVE WEBSITE",
+    website: true,
   },
 ];
 
@@ -353,8 +369,8 @@ function App() {
                 <p className="eyebrow">Selected projects</p>
                 <h2>Things I’ve built while learning, supporting, and experimenting.</h2>
                 <p className="section-copy">
-                  These projects live in separate GitHub repositories so the code,
-                  history, and future updates stay clean and easy to inspect.
+                  Website projects open their live site when a deployment is available.
+                  Source code stays separately linked to GitHub.
                 </p>
               </div>
 
@@ -370,13 +386,7 @@ function App() {
 
             <div className="project-grid">
               {projects.map((project, index) => (
-                <a
-                  className="project-card"
-                  href={project.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  key={project.title}
-                >
+                <article className="project-card" key={project.title}>
                   <div className="project-card-top">
                     <span className="project-index">0{index + 1}</span>
                     <span className="project-status">{project.status}</span>
@@ -389,10 +399,31 @@ function App() {
                   </div>
 
                   <div className="project-card-footer">
-                    <span>github.com/Kelby1</span>
-                    <span className="project-arrow">↗</span>
+                    {project.website && project.liveUrl ? (
+                      <a
+                        className="project-live-link"
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Open website ↗
+                      </a>
+                    ) : project.website ? (
+                      <span className="project-deploy-pending">Live site pending deploy</span>
+                    ) : (
+                      <span className="project-deploy-pending">Application project</span>
+                    )}
+
+                    <a
+                      className="project-source-link"
+                      href={project.repoUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Source code ↗
+                    </a>
                   </div>
-                </a>
+                </article>
               ))}
             </div>
           </div>
