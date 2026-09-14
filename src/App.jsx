@@ -39,6 +39,16 @@ const projects = [
     website: true,
   },
   {
+    title: "Land Survey Fieldbook Concept",
+    type: "Alternate Client Website · Responsive UI · Netlify",
+    description:
+      "A deliberately different land-survey concept inspired by field notebooks, cadastral plans, and client decision-making. It includes an interactive survey-goal recommender, deliverable previews, a document checklist, a project-brief builder, and a responsive inquiry flow.",
+    liveUrl: "https://kelby-land-survey-client.netlify.app/fieldbook/",
+    repoUrl: "https://github.com/Kelby1/land-survey-client-website",
+    status: "LIVE ALTERNATE CONCEPT",
+    website: true,
+  },
+  {
     title: "SCP Site-19 Command System",
     type: "Web App · React · Supabase",
     description:
