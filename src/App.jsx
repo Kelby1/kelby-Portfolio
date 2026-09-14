@@ -33,9 +33,9 @@ const projects = [
     type: "Client Website · React · Vite",
     description:
       "A professional land surveying website concept with an interactive control-point map, service presentation, field-process sections, and a quote-request flow prepared for Netlify Forms.",
-    liveUrl: null,
+    liveUrl: "https://kelby-land-survey-client.netlify.app",
     repoUrl: "https://github.com/Kelby1/land-survey-client-website",
-    status: "CLIENT PROJECT",
+    status: "LIVE CLIENT SITE",
     website: true,
   },
   {
