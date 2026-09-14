@@ -29,13 +29,13 @@ const services = [
 
 const projects = [
   {
-    title: "Land Survey Company Website",
-    type: "Client Website · React · Vite",
+    title: "Land Survey Client Portal",
+    type: "Client Website · React · Vite · Netlify",
     description:
-      "A professional land surveying website concept with an interactive control-point map, service presentation, field-process sections, and a quote-request flow prepared for Netlify Forms.",
+      "A live land surveying client concept with three selectable visual directions, an interactive survey map, document-upload and storage UI, contact management, email automation demos, a quote workflow, and a simple chat assistant.",
     liveUrl: "https://kelby-land-survey-client.netlify.app",
     repoUrl: "https://github.com/Kelby1/land-survey-client-website",
-    status: "LIVE CLIENT SITE",
+    status: "LIVE CLIENT DEMO",
     website: true,
   },
   {
