@@ -1296,3 +1296,67 @@ h3 {
   position: relative;
   z-index: 3;
 }
+
+
+/* GitHub Pages concept collection */
+.concept-collection-note {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 22px;
+  align-items: center;
+  margin: -18px 0 28px;
+  padding: 16px 18px;
+  border: 1px solid rgba(123, 231, 196, 0.2);
+  border-radius: 14px;
+  background: rgba(123, 231, 196, 0.035);
+}
+
+.concept-collection-note span {
+  color: var(--accent);
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 0.64rem;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+
+.concept-collection-note p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.project-card-top,
+.project-card-body,
+.project-card-footer {
+  pointer-events: none;
+}
+
+.project-card-footer a {
+  pointer-events: auto;
+}
+
+.project-card-overlay-link {
+  z-index: 1;
+}
+
+.project-card-top,
+.project-card-body,
+.project-card-footer {
+  z-index: 2;
+}
+
+.project-card-footer a {
+  z-index: 3;
+}
+
+@media (max-width: 680px) {
+  .concept-collection-note {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .concept-collection-note span {
+    white-space: normal;
+  }
+}
