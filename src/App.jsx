@@ -29,23 +29,73 @@ const services = [
 
 const projects = [
   {
-    title: "Land Survey Client Portal",
-    type: "Client Website · React · Vite · Netlify",
+    title: "Land Survey Concept 01 — Survey Workspace",
+    type: "Land Survey Concept · Engineering Workspace · GitHub Pages",
     description:
-      "A live land surveying client concept with three selectable visual directions, an interactive project survey workspace, parcel and terrain layers, field progress, elevation profiling, document-upload and storage UI, contact management, email automation demos, and a simple chat assistant.",
-    liveUrl: "https://kelby-land-survey-client.netlify.app",
+      "A dark engineering-focused land survey concept with an interactive project workspace, parcel and terrain layers, field progress, elevation profiling, client-portal UI, document handling demos, and project communication tools.",
+    liveUrl: "https://kelby1.github.io/land-survey-client-website/",
     repoUrl: "https://github.com/Kelby1/land-survey-client-website",
-    status: "LIVE CLIENT DEMO",
+    status: "LIVE CONCEPT 01",
     website: true,
   },
   {
-    title: "Land Survey Fieldbook Concept",
-    type: "Alternate Client Website · Responsive UI · Netlify",
+    title: "Land Survey Concept 02 — Fieldbook",
+    type: "Land Survey Concept · Field Journal · GitHub Pages",
     description:
-      "A deliberately different land-survey concept inspired by field notebooks, cadastral plans, and client decision-making. It includes an interactive survey-goal recommender, deliverable previews, a document checklist, a project-brief builder, and a responsive inquiry flow.",
-    liveUrl: "https://kelby-land-survey-client.netlify.app/fieldbook/",
+      "A warm field-notebook and cadastral-plan direction that starts with the client's property problem, then guides them through likely survey needs, documents, deliverables, and a project-brief builder.",
+    liveUrl: "https://kelby1.github.io/land-survey-client-website/fieldbook/",
     repoUrl: "https://github.com/Kelby1/land-survey-client-website",
-    status: "LIVE ALTERNATE CONCEPT",
+    status: "LIVE CONCEPT 02",
+    website: true,
+  },
+  {
+    title: "Land Survey Concept 03 — Atlas Studio",
+    type: "Land Survey Concept · Geospatial Map-First · GitHub Pages",
+    description:
+      "A clean geospatial direction for engineering and development clients with clickable survey points, project map layers, service workflows, interactive deliverable previews, and a modern technical presentation.",
+    liveUrl: "https://kelby1.github.io/land-survey-atlas-studio/",
+    repoUrl: "https://github.com/Kelby1/land-survey-atlas-studio",
+    status: "LIVE CONCEPT 03",
+    website: true,
+  },
+  {
+    title: "Land Survey Concept 04 — Property Guide",
+    type: "Land Survey Concept · Client-First Guide · GitHub Pages",
+    description:
+      "A calm property-owner-first concept that removes technical jargon, helps visitors identify what they are trying to do, explains the survey journey, checks available documents, and builds a simple project summary.",
+    liveUrl: "https://kelby1.github.io/land-survey-property-guide/",
+    repoUrl: "https://github.com/Kelby1/land-survey-property-guide",
+    status: "LIVE CONCEPT 04",
+    website: true,
+  },
+  {
+    title: "Land Survey Concept 05 — Survey Registry",
+    type: "Land Survey Concept · Document & Records · GitHub Pages",
+    description:
+      "A formal document-first concept inspired by survey plans, land records, case files, and registry workflows, with a property-record aesthetic and interactive document-readiness checker.",
+    liveUrl: "https://kelby1.github.io/land-survey-atlas-studio/concept-5-survey-registry/",
+    repoUrl: "https://github.com/Kelby1/land-survey-atlas-studio",
+    status: "LIVE CONCEPT 05",
+    website: true,
+  },
+  {
+    title: "Land Survey Concept 06 — Terra Atelier",
+    type: "Land Survey Concept · Architectural Editorial · GitHub Pages",
+    description:
+      "A premium editorial direction aimed at architects, developers, estates, and design-conscious property clients, using large typography, site stories, restrained service presentation, and landscape-led visuals.",
+    liveUrl: "https://kelby1.github.io/land-survey-atlas-studio/concept-6-terra-atelier/",
+    repoUrl: "https://github.com/Kelby1/land-survey-atlas-studio",
+    status: "LIVE CONCEPT 06",
+    website: true,
+  },
+  {
+    title: "Land Survey Concept 07 — Parcel Grid",
+    type: "Land Survey Concept · Bold Modernist · GitHub Pages",
+    description:
+      "A high-contrast Swiss-modernist concept with oversized typography, bold red-blue-lime graphics, a switchable survey board, and an interactive project-start brief for a more distinctive contemporary brand.",
+    liveUrl: "https://kelby1.github.io/land-survey-atlas-studio/concept-7-parcel-grid/",
+    repoUrl: "https://github.com/Kelby1/land-survey-atlas-studio",
+    status: "LIVE CONCEPT 07",
     website: true,
   },
   {
@@ -392,6 +442,14 @@ function App() {
               >
                 View all GitHub repositories ↗
               </a>
+            </div>
+
+            <div className="concept-collection-note">
+              <span>LAND SURVEY CONCEPT COLLECTION / 01—07</span>
+              <p>
+                Seven live, clickable directions built to give clients genuinely different
+                visual and workflow ideas before a final design is selected.
+              </p>
             </div>
 
             <div className="project-grid">
